@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Caro 工作模式拼豆图</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #171717;
+        background: #f7f7f4;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      main {
+        width: min(1180px, calc(100% - 28px));
+        margin: 0 auto;
+        padding: 22px 0 38px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(22px, 4vw, 34px);
+        letter-spacing: 0;
+      }
+
+      p {
+        margin: 0 0 16px;
+        color: #555;
+        line-height: 1.55;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 16px 0 22px;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 0 14px;
+        border: 1px solid #222;
+        border-radius: 6px;
+        background: #fff;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .button.primary {
+        background: #171717;
+        color: #fff;
+      }
+
+      .sheet {
+        overflow: auto;
+        border: 1px solid #d7d7d0;
+        background: #fff;
+      }
+
+      .sheet img {
+        display: block;
+        width: 100%;
+        min-width: 900px;
+        height: auto;
+      }
+
+      .preview {
+        margin-top: 18px;
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .preview img {
+        max-width: 100%;
+        background: #fff;
+        border: 1px solid #d7d7d0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Caro 工作模式拼豆图</h1>
+      <p>尺寸：58 x 70 颗。色卡：MARD 291 标准色。图纸每个有效色块都标注了对应色号，右侧附颜色用量统计。</p>
+      <div class="actions">
+        <a class="button primary" href="caro-work-mard-bead-pattern.png" download>下载图纸 PNG</a>
+        <a class="button" href="caro-work-mard-package.zip" download>下载完整 ZIP</a>
+        <a class="button" href="caro-work-mard-color-counts.csv" download>下载色号统计 CSV</a>
+      </div>
+      <div class="sheet">
+        <img src="caro-work-mard-bead-pattern.png" alt="Caro 工作模式 MARD 拼豆色号图纸" />
+      </div>
+      <div class="preview">
+        <figure>
+          <img src="caro-work-mard-pixel-preview.png" alt="拼豆像素预览" />
+          <figcaption>像素预览</figcaption>
+        </figure>
+        <figure>
+          <img src="caro-work-frame.png" alt="Caro 工作模式原始帧" />
+          <figcaption>提取的工作模式原始帧</figcaption>
+        </figure>
+      </div>
+    </main>
+  </body>
+</html>
